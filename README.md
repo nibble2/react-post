@@ -1,8 +1,9 @@
-#### React를 이용하여 글작성 기능 만들기
+# React를 이용하여 글작성 기능 만들기
 
-### 0. 개발 환경 셋팅
+## 0. 개발 환경 셋팅
 
 > node.js 설치
+
 > plugin 설치
 
 ```
@@ -14,11 +15,11 @@ eslint
 
 > yarn 설치
 
-### 1. React 프로젝트 세팅: Parcel로 프로젝트 구성
+## 1. React 프로젝트 세팅: Parcel로 프로젝트 구성
 
 > yarn init -y
 
-## 프리티어 설정
+### 프리티어 설정
 
 ```
 코드를 예쁘게 정리해줍니다.
@@ -26,7 +27,7 @@ eslint
 
 > yarn add prettier -D
 
-## pacakge.json에 format 추가
+### pacakge.json에 format 추가
 
 ```
 "scripts": {
@@ -34,7 +35,7 @@ eslint
 },
 ```
 
-## 플러그인 설정
+### 플러그인 설정
 
 > require config, format on save 체크
 
@@ -42,7 +43,7 @@ eslint
 단축키 ctrl+,
 ```
 
-## eslint 설정
+### eslint 설정
 
 ```
 자바스크립트 문법을 검사해줍니다.
@@ -50,7 +51,7 @@ eslint
 
 > yarn add -D eslint eslint-config-prettier
 
-## .eslintrc.json 생성
+### .eslintrc.json 생성
 
 ```
 {
@@ -71,11 +72,11 @@ eslint
 }
 ```
 
-## Parcel 번들러 추가
+### Parcel 번들러 추가
 
 > yarn add -D parcel-bundler
 
-## package.json에 코드 추가
+### package.json에 코드 추가
 
 ```
   "scripts": {
@@ -84,11 +85,11 @@ eslint
   }
 ```
 
-## react 설치
+### react 설치
 
 > yarn add react react-dom
 
-## index.js 파일 만들고 코드 추가
+### index.js 파일 만들고 코드 추가
 
 ```
 import React from "react";
@@ -102,11 +103,11 @@ ReactDOM.render(<App />, document.getElementById("root"));
 그래서 React 용 별도의 플러그인들을 설치함
 ```
 
-## eslint 플러그인 추가
+### eslint 플러그인 추가
 
 > yarn add -D babel-eslint eslint-plugin-import eslint-plugin-react
 
-## .eslintrc.json 수정
+### .eslintrc.json 수정
 
 ```
 {
@@ -141,7 +142,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 }
 ```
 
-## App 컴포넌트를 만든다
+### App 컴포넌트를 만든다
 
 ```
 src/App.js
@@ -164,7 +165,7 @@ export default class App extends Component {
 
 > yarn add -D babel-eslint @babel/core @babel/preset-env @babel/plugin-proposal-class-properties @babel/preset-react
 
-## .babelrc 생성
+### .babelrc 생성
 
 ```
 {
@@ -173,11 +174,11 @@ export default class App extends Component {
 }
 ```
 
-## .eslint.json 에 코드 추가
+### .eslint.json 에 코드 추가
 
 > "parser": "babel-eslint"
 
-## .prettierrc 생성
+### .prettierrc 생성
 
 ```
 {
@@ -185,7 +186,7 @@ export default class App extends Component {
 }
 ```
 
-## .index.js 파일에 App.js 추가
+### .index.js 파일에 App.js 추가
 
 ```
 import React from "react";
@@ -196,7 +197,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 ```
 
-## yarn dev로 시작
+### yarn dev로 시작
 
 ```
 localhost:1234에서 시작되는것이 보이나요 ?!
