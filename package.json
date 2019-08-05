@@ -1,0 +1,26 @@
+{
+  "name": "prgrms-rct",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/learn-programmers/prgrms-rct.git",
+  "author": "nibble <nibblekk@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "format": "prettier --write \"./**/*.{js,html,css}\"",
+    "dev": "parcel index.html"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
