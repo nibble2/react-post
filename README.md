@@ -22,8 +22,9 @@ eslint
 
 ```
 코드를 예쁘게 정리해줍니다.
-yarn add prettier -D
 ```
+
+> yarn add prettier -D
 
 ## pacakge.json에 format 추가
 
@@ -35,17 +36,19 @@ yarn add prettier -D
 
 ## 플러그인 설정
 
+> require config, format on save 체크
+
 ```
 단축키 ctrl+,
-require config, format on save 체크
 ```
 
 ## eslint 설정
 
 ```
 자바스크립트 문법을 검사해줍니다.
-yarn add -D eslint eslint-config-prettier
 ```
+
+> yarn add -D eslint eslint-config-prettier
 
 ## .eslintrc.json 생성
 
